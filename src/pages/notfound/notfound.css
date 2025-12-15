@@ -1,0 +1,19 @@
+.container h1 {
+    font-size: 94px;
+    color: #483182;
+}
+
+.container p {
+    font-size: 40px;
+    color: #483182;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .container p {
+        text-align: center;
+    }
+}
