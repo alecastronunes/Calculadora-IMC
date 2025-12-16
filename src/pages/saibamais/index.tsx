@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import img_01 from "../../assets/img-formula-imc.png";
 import img_02 from "../../assets/img-formula-imc-02.png";
 import "./saibamais.css";
