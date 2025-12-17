@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Calculadora de IMC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Índice
 
-Currently, two official plugins are available:
+- [Sobre](#sobre)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contato](#contato)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre
 
-## React Compiler
+A Calculadora de IMC é um projeto pessoal que foi criado com o objetivo central de por em prática os conceitos que venho estudando e desenvolvendo ao longo do curso. Para criar este projeto utilizei Vite, React com TypeScritp, react router dom para criar as rotas de navegação das páginas "Home", "Saibamais" e "NotFound", e também para fazer com que o "Header" seja exibido em todas as páginas.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Criar e trabalhar neste projeto foi muito importante e proveitoso para meu aprendizado, pois nele pude aplicar conceitos que estou aprendendo no curso. Pude aplicar conceitos como, uso de "useState" para gerenciar a atualização de estado dos componentes, uso de "Interface" para garantir que o state de resultado exiba fielmente os dados de acordo com as propriedades definidas previamente na interface, e também outra coisa muito interessante e importante que aprendi a utilizar, que é a "renderização condicional", e neste projeto a utilizei para mostrar a sessão de resultados somente quando houvesse algo preenchido dentro do state de resultado. 
 
-## Expanding the ESLint configuration
+A princípio tive algumas dificuldades em organizar a maneira como aplicar o uso de interface neste projeto, não lembrava exatamente a sintáxe e a forma como tipar um state a partir dessa inteface. A forma que encontrei para superar essas dificuldades foi voltar nas minhas anotações e em aulas do curso que abordam esse conceito, e com isso pude aplicar de forma correta e fixar o conhecimento. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+De forma geral, considero que esse projeto foi de extrema importância para o meu desenvolvimento em programação, pois a partir da ideia de constriuir a aplicação do zero e sozinho, pesquisando no material do curso quando surgia momentos de travamento, pude adquirir mais confiabilidade e praticidade para atuar em proejtos futuros. 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Instalação
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Instruções sobre como instalar e configurar o projeto.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone o repositório
+git clone https://github.com/alecastronunes/Calculadora-IMC.git
+
+# Entre no diretório do projeto
+cd seu-repositorio
+
+# Instale as dependências
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Uso
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Instruções sobre como usar o projeto após a instalação.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Comando para iniciar o projeto
+npm run dev
 ```
+
+## Contato
+
+Alexandre Castro - [acnunes.dev@gmail.com](acnunes.dev@gmail.com)
+
+Link para o projeto: [https://calculadora-imc-three-rouge.vercel.app/](https://calculadora-imc-three-rouge.vercel.app/)
